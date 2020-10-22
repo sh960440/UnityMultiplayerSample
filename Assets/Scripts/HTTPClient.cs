@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+// Do HTTP requests in Unity.
+// For example: User login (valid username or password?), Account registration
 public class HTTPClient : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -41,6 +43,7 @@ public class HTTPClient : MonoBehaviour
         }
     }
 
+    // Post something to a database
     IEnumerator UnityPOST()
     {
         string jsonString = "{\"username\":\"Galal\"}";
