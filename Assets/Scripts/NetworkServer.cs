@@ -19,7 +19,7 @@ public class NetworkServer : MonoBehaviour
     void Start ()
     {
         m_Driver = NetworkDriver.Create();
-        var endpoint = NetworkEndPoint.AnyIpv4; // Set an endpoint to AnyIpv4 (Grab the IP of the machine which is running on)
+        var endpoint = NetworkEndPoint.LoopbackIpv4; // Set an endpoint to AnyIpv4 (Grab the IP of the machine which is running on)
         endpoint.Port = serverPort;
         if (m_Driver.Bind(endpoint) != 0) 
             Debug.Log("Failed to bind to port " + serverPort); // If it doesn't bind, Log it

@@ -345,3 +345,4 @@ MonoBehaviour:
   serverIP: 127.0.0.1
   serverPort: 12345
   player: {fileID: 8931514046466213661, guid: 614743e11eff5164e8cac4b081d55865, type: 3}
+  assignedPlayerID: 
